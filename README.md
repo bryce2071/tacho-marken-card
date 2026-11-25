@@ -65,6 +65,18 @@ Je Marke:
 | `farbe` | optional, sonst Blau |
 | `attribut_stand` | optional, Attribut mit einer Uhrzeit, erscheint als „(Stand 07:30)“ |
 
+## Bearbeiten-Dialog
+
+Alles lässt sich auch im Bearbeiten-Dialog einstellen:
+
+- oben Entität, Name, Minimum, Maximum und Zeiger,
+- **Farbbereiche:** je Bereich „ab Wert“ und Farbe (Farbwähler), hinzufügen und entfernen,
+- **Marken:** je Marke Entität, Name, Form (Strich oder Dreieck), Farbe, gestrichelt und das Attribut mit
+  der Uhrzeit; mit den Pfeilen umsortieren (die erste liegt oben), entfernen, über „Marke hinzufügen“
+  eine weitere Entität anhängen.
+
+Beim Hinzufügen schlägt die Kartenauswahl einen Sensor mit Zahlenwert vor.
+
 ## Hinweise
 
 - Tipp auf die Karte öffnet die Details der Entität.
@@ -72,7 +84,6 @@ Je Marke:
   passt seine Größe an, damit er den Zeiger nicht berührt.
 - Wer die Datei vorher von Hand eingebunden hatte (`/local/tacho-marken-card.js`), entfernt diese
   Ressource (**Einstellungen → Dashboards → ⋮ → Ressourcen**), sonst lädt der Browser die ältere Fassung.
-- Einstellungen bisher nur im Code-Editor (YAML).
 
 ## Lizenz
 
