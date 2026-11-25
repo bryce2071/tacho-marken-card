@@ -1,0 +1,6 @@
+{
+  "name": "Tacho mit Marken",
+  "filename": "tacho-marken-card.js",
+  "render_readme": true,
+  "homeassistant": "2025.1.0"
+}

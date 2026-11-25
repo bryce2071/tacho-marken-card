@@ -1,0 +1,26 @@
+name: Prüfen
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  hacs:
+    name: HACS / Marketplace
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hacs/action@main
+        with:
+          category: plugin
+          ignore: brands images topics
+
+  syntax:
+    name: JavaScript-Syntax
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: cp tacho-marken-card.js "$RUNNER_TEMP/karte.mjs" && node --check "$RUNNER_TEMP/karte.mjs"
