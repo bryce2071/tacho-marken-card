@@ -13,7 +13,7 @@ jobs:
       - uses: hacs/action@main
         with:
           category: plugin
-          ignore: brands images topics
+          ignore: brands description images topics
 
   syntax:
     name: JavaScript-Syntax
